@@ -89,6 +89,47 @@
                         "value": "com.lihaoyi"
                     },
                     "name": {
+                        "value": "scalatags"
+                    },
+                    "attributes": {
+                        
+                    }
+                },
+                "version": "0.9.1",
+                "configuration": {
+                    "value": "default(compile)"
+                },
+                "exclusions": [
+                    
+                ],
+                "publication": {
+                    "name": "",
+                    "type": {
+                        "value": ""
+                    },
+                    "ext": {
+                        "value": ""
+                    },
+                    "classifier": {
+                        "value": ""
+                    }
+                },
+                "optional": false,
+                "transitive": true
+            },
+            "cross": {
+                "$type": "mill.scalalib.CrossVersion.Binary",
+                "platformed": false
+            },
+            "force": false
+        },
+        {
+            "dep": {
+                "module": {
+                    "organization": {
+                        "value": "com.lihaoyi"
+                    },
+                    "name": {
                         "value": "cask"
                     },
                     "attributes": {
@@ -124,6 +165,6 @@
             "force": false
         }
     ],
-    "valueHash": -1639850248,
-    "inputsHash": -2086906843
+    "valueHash": -1322647314,
+    "inputsHash": 608928936
 }
