@@ -6,12 +6,12 @@
     },
     {
         "label": "mill.scalalib.ZincWorkerModule.compilerInterfaceClasspath",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "mill.scalalib.ZincWorkerModule.classpath",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -21,32 +21,32 @@
     },
     {
         "label": "app.upstreamCompileOutput",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "app.sources",
-        "millis": 4,
+        "millis": 1,
         "cached": false
     },
     {
         "label": "app.generatedSources",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "app.allSources",
-        "millis": 3,
+        "millis": 1,
         "cached": false
     },
     {
         "label": "app.allSourceFiles",
-        "millis": 2,
+        "millis": 1,
         "cached": false
     },
     {
         "label": "app.transitiveLocalClasspath",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -76,7 +76,7 @@
     },
     {
         "label": "app.scalaLibraryIvyDeps",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
@@ -106,7 +106,7 @@
     },
     {
         "label": "app.scalaCompilerClasspath",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -121,12 +121,12 @@
     },
     {
         "label": "app.compile",
-        "millis": 646,
+        "millis": 314,
         "cached": false
     },
     {
         "label": "app.localClasspath",
-        "millis": 2,
+        "millis": 1,
         "cached": false
     },
     {
@@ -141,7 +141,7 @@
     },
     {
         "label": "app.runClasspath",
-        "millis": 2,
+        "millis": 1,
         "cached": false
     },
     {
@@ -156,7 +156,7 @@
     },
     {
         "label": "app.forkEnv",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -166,12 +166,12 @@
     },
     {
         "label": "app.finalMainClassOpt",
-        "millis": 5,
+        "millis": 2,
         "cached": false
     },
     {
         "label": "app.finalMainClass",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
@@ -181,7 +181,7 @@
     },
     {
         "label": "app.runBackground",
-        "millis": 106,
+        "millis": 104,
         "cached": false
     }
 ]

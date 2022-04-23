@@ -1,7 +1,7 @@
 {
     "value": [
         "ref:c984eca8:/home/lai/workspace/minimalApplication-0.7.4/app/resources",
-        "ref:994b255c:/home/lai/workspace/minimalApplication-0.7.4/out/app/compile/dest/classes",
+        "ref:bee375c3:/home/lai/workspace/minimalApplication-0.7.4/out/app/compile/dest/classes",
         "qref:b6d446ef:/home/lai/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.2/scala-library-2.13.2.jar",
         "qref:4dde8f32:/home/lai/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/scalatags_2.13/0.9.1/scalatags_2.13-0.9.1.jar",
         "qref:91b916ce:/home/lai/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/cask_2.13/0.7.4/cask_2.13-0.7.4.jar",
@@ -25,6 +25,6 @@
         "qref:fe19b9e7:/home/lai/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar",
         "qref:c4d640ab:/home/lai/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.1.4/scala-collection-compat_2.13-2.1.4.jar"
     ],
-    "valueHash": -233434932,
-    "inputsHash": 508079968
+    "valueHash": 1497136046,
+    "inputsHash": 1074616082
 }
