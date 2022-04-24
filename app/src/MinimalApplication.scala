@@ -12,7 +12,7 @@ object MinimalApplication extends cask.MainRoutes{
         div(cls := "container")(
           h1("Scala Chat!"),
           div(
-            for ((name, msg) <- messages) yield p(b(name), " ", msg)
+            div(id := "messageList")(messageList()),
           ),
           for (error <- errorOpt) yield i(color.red)(error),
           form(action :="/", method := "post")(
@@ -24,6 +24,8 @@ object MinimalApplication extends cask.MainRoutes{
       )
     )
   )
+
+  def messageList() = frag(for ((name, msg) <- messages) yield p(b(name), " ", msg))
 
   @cask.postForm("/")
   def postChatMsg(name: String, msg: String) = {
