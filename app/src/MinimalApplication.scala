@@ -4,20 +4,24 @@ object MinimalApplication extends cask.MainRoutes{
 
   var messages = Vector(("alice", "Hello World!"), ("bob", "I am cow, hear me moo"))
   val bootstrap = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css"
+
+  @cask.staticResources("/static")
+  def staticResourceRoutes() = "static"
+
   @cask.get("/")
-  def hello(errorOpt: Option[String] = None, userName: Option[String] = None, msg: Option[String] = None) = doctype("html")(
+  def hello() = doctype("html")(
     html(
-      head(link(rel := "stylesheet", href := bootstrap)),
+      head(link(rel := "stylesheet", href := bootstrap), script(src := "/static/app.js")),
       body(
         div(cls := "container")(
           h1("Scala Chat!"),
           div(
             div(id := "messageList")(messageList()),
           ),
-          for (error <- errorOpt) yield i(color.red)(error),
-          form(action :="/", method := "post")(
-            input(`type` := "text", name := "name", placeholder := "User name", userName.map(value := _)),
-            input(`type` := "text", name := "msg", placeholder := "Write a message!", msg.map(value := _)),
+          div(id := "errorDiv", color.red),
+          form(onsubmit := "submitForm(); return false")(
+            input(`type` := "text", id := "nameInput", placeholder := "User name"),
+            input(`type` := "text", id := "msgInput", placeholder := "Write a message!"),
             input(`type` := "submit")
           )
         )
@@ -27,13 +31,13 @@ object MinimalApplication extends cask.MainRoutes{
 
   def messageList() = frag(for ((name, msg) <- messages) yield p(b(name), " ", msg))
 
-  @cask.postForm("/")
+  @cask.postJson("/")
   def postChatMsg(name: String, msg: String) = {
-    if (name == "") hello(Some("Name cannot be empty"), Some(name), Some(msg))
-    else if (msg == "") hello(Some("Message cannot be empty"), Some(name), Some(msg))
+    if (name == "") ujson.Obj("success" -> false, "err" -> "Name cannot be empty")
+    else if (msg == "") ujson.Obj("success" -> false, "err" -> "Message cannot be empty")
     else {
       messages = messages :+ (name -> msg)
-      hello(None, Some(name), None)
+      ujson.Obj("success" -> true, "txt" -> messageList().render, "err" -> "")
     }
   }
 
