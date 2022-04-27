@@ -37,7 +37,8 @@ object MinimalApplication extends cask.MainRoutes{
     else if (msg == "") ujson.Obj("success" -> false, "err" -> "Message cannot be empty")
     else {
       messages = messages :+ (name -> msg)
-      ujson.Obj("success" -> true, "txt" -> messageList().render, "err" -> "")
+      for (conn <- openConnections) conn.send(cask.Ws.Text(messageList().render))
+      ujson.Obj("success" -> true, "err" -> "")
     }
   }
 
