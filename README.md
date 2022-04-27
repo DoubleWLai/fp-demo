@@ -4,3 +4,6 @@
 
 
 ./mill -w app.runBackground
+
+
+./mill clean app.runBackground
