@@ -1,3 +1,3 @@
 # fp-demo
 
-. /mill - w app . runBackground
+./mill -w app.runBackground
