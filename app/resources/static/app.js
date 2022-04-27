@@ -1,5 +1,4 @@
 function submitForm() {
-app/resources/static/app.js
 fetch(
 "/",
 {method: "POST", body: JSON.stringify({name: nameInput.value, msg: msgInput.value})}
