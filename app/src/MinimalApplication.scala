@@ -56,7 +56,7 @@ object MinimalApplication extends cask.MainRoutes{
     if (name == "") ujson.Obj("success" -> false, "err" -> "Name cannot be empty")
     else if (msg == "") ujson.Obj("success" -> false, "err" -> "Message cannot be empty")
     else {
-      messages = messages :+ (name -> msg)
+      ctx.run(query[Message].insert(lift(Message(name, msg))))
       for (conn <- openConnections) conn.send(cask.Ws.Text(messageList().render))
       ujson.Obj("success" -> true, "err" -> "")
     }
