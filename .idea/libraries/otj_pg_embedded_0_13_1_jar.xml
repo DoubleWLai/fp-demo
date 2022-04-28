@@ -1,0 +1,10 @@
+<component name="libraryTable">
+    <library name="otj-pg-embedded-0.13.1.jar">
+        <CLASSES>
+            <root url="jar://$PROJECT_DIR$/../../.cache/coursier/v1/https/repo1.maven.org/maven2/com/opentable/components/otj-pg-embedded/0.13.1/otj-pg-embedded-0.13.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+            <root url="jar://$PROJECT_DIR$/../../.cache/coursier/v1/https/repo1.maven.org/maven2/com/opentable/components/otj-pg-embedded/0.13.1/otj-pg-embedded-0.13.1-sources.jar!/"/>
+        </SOURCES>
+    </library>
+</component>

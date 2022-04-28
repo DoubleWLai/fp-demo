@@ -1,0 +1,10 @@
+<component name="libraryTable">
+    <library name="quill-core_2.13-3.5.2.jar">
+        <CLASSES>
+            <root url="jar://$PROJECT_DIR$/../../.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-core_2.13/3.5.2/quill-core_2.13-3.5.2.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+            <root url="jar://$PROJECT_DIR$/../../.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-core_2.13/3.5.2/quill-core_2.13-3.5.2-sources.jar!/"/>
+        </SOURCES>
+    </library>
+</component>
